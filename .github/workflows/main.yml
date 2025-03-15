@@ -22,8 +22,8 @@ permissions:
 jobs:
 # Web Container Build/Test
 ## Get Source
+  #githubのページで表示されるジョブの名前
   web-test-build-image:
-    # githubのページで表示されるジョブの名前
     name: Web Container - Test and Build
     #jobsを実行する環境
     runs-on: ubuntu-20.04
