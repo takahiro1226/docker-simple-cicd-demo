@@ -8,7 +8,7 @@ COPY . /workspace
 WORKDIR /workspace
 ARG REACT_APP_API_SERVER
 # docker-compose.ymlで指定した値　github actionで使う npm run buildでjavascriptをインストールするとき使う
-RUN npm ci && mpm run test && npm run build
+RUN npm ci && npm run test && npm run build
 
 # Hosting in nginx
 # このステージが実行されるときには、test-and-buildステージが実行されている
