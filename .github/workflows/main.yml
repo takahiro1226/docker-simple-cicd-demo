@@ -42,7 +42,7 @@ jobs:
     #docker image buildで本番環境用のイメージをビルド
     #targetを設定しているのはマルチステージビルドを行っているため
     #　.があるのはビルドコンテキストとして、webディレクトリを指定している カレントディレクトリになる
-     - name: Build an Image and Run Tests
+      - name: Build an Image and Run Tests
         run: |
           docker image build --target production -t temp_web_image_name:latest --build-arg REACT_APP_API_SERVER=/api .
     
